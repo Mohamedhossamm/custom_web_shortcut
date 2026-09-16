@@ -3,6 +3,7 @@
 import { Component, useState, useRef } from "@odoo/owl";
 import { registry } from "@web/core/registry";
 import { standardFieldProps } from "@web/views/fields/standard_field_props";
+import { formatHotkey as formatHotkeyLabel } from "./hotkey_label";
 
 const MODIFIER_KEYS = ["control", "alt", "shift", "meta", "capslock", "tab", "dead"];
 
@@ -134,13 +135,7 @@ export class HotkeyCaptureField extends Component {
     }
 
     get display() {
-        if (!this.value) {
-            return "";
-        }
-        return this.value
-            .split("+")
-            .map((p) => p.charAt(0).toUpperCase() + p.slice(1))
-            .join(" + ");
+        return formatHotkeyLabel(this.value);
     }
 }
 

@@ -1,10 +1,21 @@
 .o_web_shortcuts_systray {
     .o_web_shortcuts_panel {
         top: 100%;
-        min-width: 260px;
+        min-width: 340px;
+        max-width: 420px;
         max-height: 60vh;
         overflow-y: auto;
         z-index: 1050;
+    }
+
+    .o_web_shortcuts_label {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
+    .o_web_shortcuts_item kbd {
+        white-space: nowrap;
+        flex: 0 0 auto;
     }
 
     .o_web_shortcuts_item {
