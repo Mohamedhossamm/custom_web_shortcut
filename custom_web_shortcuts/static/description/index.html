@@ -33,10 +33,10 @@
       </p>
     </div>
     <div style="display:table-cell;width:33%;vertical-align:top;background:#FBFAFB;border:1px solid #E7E2E6;border-radius:12px;padding:24px;">
-      <h4 style="margin:0 0 8px 0;font-size:19px;font-weight:700;color:#714B67;">Ready on install</h4>
+      <h4 style="margin:0 0 8px 0;font-size:19px;font-weight:700;color:#714B67;">Per user &amp; per group</h4>
       <p style="margin:0;font-size:15px;color:#6B6570;">
-        A sensible set of shortcuts is created for you. Keep them, edit them,
-        or delete them &mdash; they are plain records.
+        Every shortcut can be limited to chosen users, groups or a company.
+        Empty means everyone.
       </p>
     </div>
   </div>
@@ -100,7 +100,7 @@
 
   <!-- ================= FEATURE 3 ================= -->
   <div style="margin:0 0 24px 0;">
-    <img src="feature_setup.png" style="width:100%;display:block;border:1px solid #E7E2E6;border-radius:12px;" alt="Capture a hotkey by pressing it"/>
+    <img src="screenshot_form.png" style="width:100%;display:block;border:1px solid #E7E2E6;border-radius:12px;" alt="Creating a shortcut: press the key combination"/>
   </div>
 
   <div style="margin:0 0 48px 0;">
@@ -112,11 +112,58 @@
       that would fire while you type.
     </p>
     <ul style="font-size:16px;color:#6B6570;margin:0;padding-left:22px;">
-      <li style="margin-bottom:6px;">Restrict a shortcut to specific <b>users</b>, <b>groups</b> or a <b>company</b></li>
       <li style="margin-bottom:6px;">Keep a shortcut live while the cursor sits inside a field, or not &mdash; your call</li>
-      <li style="margin-bottom:6px;">Systray button lists every shortcut available to you, with a one-click reload</li>
+      <li style="margin-bottom:6px;">Order shortcuts with a sequence, so the systray list reads the way you work</li>
       <li>Archive a shortcut instead of deleting it when you want it back later</li>
     </ul>
+  </div>
+
+  <!-- ================= FEATURE 4: AVAILABILITY ================= -->
+  <div style="margin:0 0 24px 0;">
+    <img src="screenshot_groups.png" style="width:100%;display:block;border:1px solid #E7E2E6;border-radius:12px;" alt="Restricting a shortcut to a group"/>
+  </div>
+
+  <div style="margin:0 0 48px 0;">
+    <h3 style="font-size:24px;font-weight:700;margin:0 0 12px 0;">Not every shortcut is for everyone</h3>
+    <p style="font-size:16px;color:#6B6570;margin:0 0 16px 0;">
+      Each shortcut carries its own availability rules. Leave them empty and the shortcut is
+      global; fill them in and only the people you picked ever get it &mdash; nobody else even
+      sees it in their systray list.
+    </p>
+    <table style="width:100%;border-collapse:collapse;font-size:15px;">
+      <tr>
+        <td style="padding:10px 12px;border-bottom:1px solid #EFEBEE;width:24%;font-weight:600;">Users</td>
+        <td style="padding:10px 12px;border-bottom:1px solid #EFEBEE;color:#6B6570;">
+          Give a power user their own set without touching anyone else's setup.
+        </td>
+      </tr>
+      <tr>
+        <td style="padding:10px 12px;border-bottom:1px solid #EFEBEE;font-weight:600;">Groups</td>
+        <td style="padding:10px 12px;border-bottom:1px solid #EFEBEE;color:#6B6570;">
+          A Delete shortcut for Sales Administrators only, a read-only set for everyone else.
+        </td>
+      </tr>
+      <tr>
+        <td style="padding:10px 12px;font-weight:600;">Company</td>
+        <td style="padding:10px 12px;color:#6B6570;">
+          In a multi-company database, each company can run its own combinations.
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- ================= FEATURE 5: SYSTRAY ================= -->
+  <div style="margin:0 0 24px 0;">
+    <img src="screenshot_systray.png" style="width:100%;display:block;border:1px solid #E7E2E6;border-radius:12px;" alt="Systray panel listing the available shortcuts"/>
+  </div>
+
+  <div style="margin:0 0 48px 0;">
+    <h3 style="font-size:24px;font-weight:700;margin:0 0 12px 0;">Nobody has to memorise anything</h3>
+    <p style="font-size:16px;color:#6B6570;margin:0;">
+      The keyboard icon in the systray opens the list of shortcuts <i>that user</i> actually has,
+      from anywhere in Odoo. Click a line to run it with the mouse, or hit the reload icon after
+      an administrator changed something &mdash; no page refresh needed.
+    </p>
   </div>
 
   <!-- ================= DEFAULTS ================= -->
