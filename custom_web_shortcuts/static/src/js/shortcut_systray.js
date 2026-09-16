@@ -3,6 +3,7 @@
 import { Component, useState, useRef, onWillStart, useExternalListener } from "@odoo/owl";
 import { registry } from "@web/core/registry";
 import { useService } from "@web/core/utils/hooks";
+import { formatHotkey as formatHotkeyLabel } from "./hotkey_label";
 
 /**
  * Small systray button showing the list of available shortcuts.
@@ -84,10 +85,7 @@ export class ShortcutSystray extends Component {
     }
 
     formatHotkey(hotkey) {
-        return (hotkey || "")
-            .split("+")
-            .map((p) => p.charAt(0).toUpperCase() + p.slice(1))
-            .join(" + ");
+        return formatHotkeyLabel(hotkey);
     }
 }
 

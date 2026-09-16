@@ -39,6 +39,7 @@ Shortcuts can be restricted per user, per group and per company.
     "images": ["static/description/banner.png"],
     "assets": {
         "web.assets_backend": [
+            "web_shortcuts/static/src/js/hotkey_label.js",
             "web_shortcuts/static/src/js/current_controller.js",
             "web_shortcuts/static/src/js/shortcut_commands.js",
             "web_shortcuts/static/src/js/shortcut_service.js",
