@@ -24,7 +24,7 @@ Shortcuts can be restricted per user, per group and per company.
 
 Compatible with Odoo 17.0, 18.0 and 19.0 (Community & Enterprise).
     """,
-    "author": "Ahmed Farouk",
+    "author": "Mohamed Hossam",
     "category": "Extra Tools",
     "license": "LGPL-3",
     "images": ["static/description/banner.png"],
