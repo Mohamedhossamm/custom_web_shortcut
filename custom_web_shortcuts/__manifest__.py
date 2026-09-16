@@ -22,7 +22,6 @@ New, alt+shift+arrow-right for the next view, and so on).
 
 Shortcuts can be restricted per user, per group and per company.
 
-Compatible with Odoo 17.0, 18.0 and 19.0 (Community & Enterprise).
     """,
     "author": "Mohamed Hossam",
     "category": "Extra Tools",
@@ -33,6 +32,11 @@ Compatible with Odoo 17.0, 18.0 and 19.0 (Community & Enterprise).
         "security/ir.model.access.csv",
         "views/web_shortcut_views.xml",
     ],
+    "license": "OPL-1",
+    "price": 45.00,
+    "currency": "USD",
+    "support": "mohamed.hossam.aboelwafaa@gmail.com",
+    "images": ["static/description/banner.png"],
     "assets": {
         "web.assets_backend": [
             "web_shortcuts/static/src/js/current_controller.js",
