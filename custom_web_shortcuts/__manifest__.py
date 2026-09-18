@@ -33,7 +33,6 @@ Shortcuts can be restricted per user, per group and per company.
         "views/web_shortcut_views.xml",
     ],
     "license": "OPL-1",
-    "price": 45.00,
     "currency": "USD",
     "support": "mohamed.hossam.aboelwafaa@gmail.com",
     "images": ["static/description/banner.png"],
